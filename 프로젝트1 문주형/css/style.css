@@ -1,0 +1,518 @@
+*{margin:0;padding:0;}
+ul,li{list-style:none;}
+a{text-decoration:none;color:#333;}
+body{height: 7800px;}
+.cf:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+/* 헤더 */
+nav{
+    width:100%;
+    min-width: 1200px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 100;
+    position: fixed;
+    /* border: 1px solid red; */
+}
+nav #nav_left{
+    position:absolute;
+    width:185px;
+    height:35px;
+    top:30px; left:18%;
+    z-index: 100;
+}
+
+nav #nav_right{
+    position:absolute;
+    left:1210px;
+    text-align:center;
+    /* border: 1px solid pink; */
+}
+
+nav #nav_right .right_box{
+    z-index:100;
+    position: relative;
+}
+
+.right_box > ul{
+    margin-top: 20px;
+    text-align:center;
+    z-index: 100;
+}
+
+.right_box > ul > li{
+    float: left;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.right_box > ul > li > a{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+nav .box{
+    /* width:100%; */
+    /* height:100px; */
+    z-index:100;
+    position:relative;
+}
+
+nav .box > ul{
+    margin-top: 30px;
+    margin-left: 580px;
+    /* border: 1px solid pink; */
+}
+
+nav .box > ul > li{
+    float: left;
+    /* border: 1px solid pink; */
+}
+
+nav .box > ul > li > a{
+    /* display: flex; */
+    height: 80px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    /* border: 1px solid pink; */
+    position: relative;
+}
+
+.box ul li.box1{
+    /* width: 81px; height: 100px; */
+    /* border: 1px solid pink; */
+    margin-left: 25px;
+}
+.box ul li.box2{
+    /* width: 70px; height: 100px; */
+    /* border: 1px solid pink; */
+    margin-left: 25px;
+}
+.box ul li.box3{
+    /* width: 118px; height: 100px; */
+    /* border: 1px solid pink; */
+    margin-left: 25px;
+}
+.box ul li.box4{
+    /* width: 90px; height: 100px; */
+    /* border: 1px solid pink; */
+    margin-left: 25px;
+}
+
+.box > ul > li > a > .outline{
+    position: absolute;
+    top: 25px; left: 0;
+    width: 0; height: 1px;
+    background: #000;
+    transition: width 0.3s ease-out;
+}
+
+.box > ul > li > a:hover > .outline{
+    width: 100%;
+}
+
+nav .sub{
+    position: absolute;
+    left:0; top:70px;
+    width:100%; height:0px;
+    overflow:hidden;
+    z-index:10;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: all 0.2s;
+}
+
+nav >.box>ul>li.subho:hover .sub{
+    height:auto;
+    padding-bottom: 50px;
+}
+
+nav .sub .sub_contents{
+    width:100%;
+    margin-left: 300px;
+    text-align:center;
+}
+nav .sub .sub_contents div{
+    float:left;
+    text-align:center;
+    font-size:25px;
+    padding-top:60px;
+}
+
+nav .sub .sub_contents ul{
+    float: left;
+    vertical-align: top;
+    width:170px;
+    margin-left: 80px;
+    margin-top:30px;
+}
+nav .sub .sub_contents  ul li{
+    padding:3px 0;
+    height:20px;
+
+}
+nav .sub .sub_contents  ul li a{
+    font-size:15px;
+    font-weight: normal;
+}
+nav .sub .sub_contents  ul li.menu{
+    text-align:center;
+    padding:5px 0;
+}
+
+nav .sub .sub_contents  ul li.menu a{
+    font-weight: 600;
+}
+nav .sub .sub_contents  ul li.menu1{
+    margin-top: 30px;
+}
+
+nav .box1 .sub .sub_contents{
+    margin-left: 320px;
+}
+
+nav .box1 .sub .sub_contents ul{
+    margin-left: 30px;
+}
+
+nav .box1 .sub .sub_contents ul li a{
+    font-weight: normal;
+}
+/* 헤더 끝 */
+
+/* 바디 */
+.bodysection h4{
+    display: block;
+    color: #000;
+    font-size: 20px;
+    text-align: left;
+    letter-spacing: 1px;
+    padding-bottom: 2em;
+}
+
+.bodysection .afterline{
+    position: relative;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.bodysection .afterline::after {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #000;
+    bottom: -0.80em;
+    right: 0;
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.bodysection .sectionp1{
+    font-size: 13px;
+    font-weight: 500;
+    color: #989898;
+    padding-top: 10px;
+}
+
+.bodysection .sectionp2{
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 10px;
+    letter-spacing: -0.8px;
+    cursor: pointer;
+}
+
+.bodysection .sectionp3{
+    margin-left: 10px;
+    cursor: text;
+}
+
+.bodysection .article{
+    float: left;
+}
+
+/* 섹션1 */
+.main_top{
+    position: relative;
+    top: 100px;
+    width: 100%; height: 810px;
+    z-index: 11;
+}
+
+.main_top img{
+    width: 1900px;
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    cursor: pointer;
+}
+/* 섹션1 끝 */
+
+/* 섹션2 */
+.section2{
+    position: relative;
+    top: 400px; left: 350px;
+    width: 100%; height: 1100px;
+}
+
+.section2 .article2{
+    margin-left: 35px;
+}
+
+.section2 .article img{
+    cursor: pointer;
+}
+
+.section2 .article2 .img1{display: block;}
+.section2 .article2 .img2{display: none;}
+
+.section2 .article2:hover .img1{display: none;}
+.section2 .article2:hover .img2{display: block;}
+
+/* 섹션2 끝 */
+
+/* 섹션3 */
+.section3{
+    position: relative;
+    top: 300px; left: 350px;
+    width: 100%; height: 786px;
+}
+
+.section3 .article img{
+    cursor: pointer;
+}
+
+.section3 .article2{
+    margin-left: 30px;
+}
+
+.section3 .article3{
+    margin-left: 30px;
+}
+/* 섹션3 끝 */
+
+/* 섹션4 */
+.main_middle{
+    position: relative;
+    top: 300px;
+    width: 100%; height: 1136px;
+    z-index: 9;
+}
+
+.main_middle img{
+    width: 1894px;
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+/* 섹션4 끝*/
+
+/* 섹션5 */
+.section5{
+    position: relative;
+    top: 300px; left: 350px;
+    width: 100%; height: 1100px;
+}
+
+.section5 h4{
+    display: block;
+    color: #000;
+    font-size: 20px;
+    text-align: left;
+    letter-spacing: 1px;
+    padding-bottom: 2em;
+}
+
+.section5 .afterline{
+    position: relative;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.section5 .afterline::after {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #000;
+    bottom: -0.80em;
+    right: 0;
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.section5 .sectionp1{
+    font-size: 13px;
+    font-weight: 500;
+    color: #989898;
+    padding-top: 10px;
+}
+
+.section5 .sectionp2{
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 10px;
+    letter-spacing: -0.8px;
+}
+
+.section5 .sectionp3{
+    margin-left: 10px;
+}
+
+.section5 .article{
+    float: left;
+}
+
+.section5 .article img{
+    cursor: pointer;
+}
+
+.section5 .article2{
+    margin-left: 35px;
+}
+/* 섹션5 끝 */
+
+/* 섹션6 */
+.main_bot{
+    position: relative;
+    top: 200px;
+    width: 100%; height: 1138px;
+    z-index: 9;
+}
+
+.main_bot img{
+    width: 1897px;
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+/* 섹션6 끝*/
+
+/* 섹션7 */
+.section7{
+    position: relative;
+    top: 200px; left: 350px;
+    width: 100%; height: 786px;
+}
+
+.section7 .article img{
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.section7 .article2{
+    margin-left: 30px;
+}
+
+.section7 .article3{
+    margin-left: 30px;
+}
+/* 섹션7 끝 */
+
+/* 섹션8 */
+.section8{
+    position: relative;
+    top: 40px; left: 350px;
+    width: 100%; height: 786px;
+}
+
+.section8 .article img{
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.section8 .article2{
+    margin-left: 30px;
+}
+
+.section8 .article3{
+    margin-left: 30px;
+}
+/* 섹션8 끝 */
+/* 바디 끝 */
+
+
+/* 푸터 */
+footer{
+    color: #989898;
+    font-weight: 300;
+    position: relative;
+    top: -150px;
+}
+
+footer .tbinner{
+    text-align: left;
+    font-size: 10px;
+}
+
+.footersec1,.footersec2{
+    padding-top: 50px;
+    padding-left: 360px;
+}
+
+.footersec1{
+    width: 100%;
+    font-size: 0;
+    border-top: 1px solid #e1e1e1;
+    padding-bottom: 80px;
+}
+
+.footersec1 .footersec1table{
+    width: 300px; height: 141px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer td{
+    font-size: 13px;
+    line-height: 15px;
+    padding-bottom: 4px;
+    color: #989898;
+}
+
+footer .ft_title{
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4em;
+    padding-bottom: 1.3em;
+}
+
+footer .call{
+    font-size: 17px;
+    line-height: 1.4em;
+    padding-bottom: 1em;
+    color: #000;
+    cursor: pointer;
+}
+
+footer .footersec1 .ft-td{
+    cursor: pointer;
+}
+
+.footersec2{
+    background: #f5f5f5;
+    padding-bottom: 40px;
+}
+
+.footersec2 .tbinner a{
+    color: #989898;
+}
+
+.footersec2 .copyright td{
+    padding-top: 30px;
+}
+/* 푸터 끝 */
+
+/* 카카오 */
+.kakao{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 10;
+}
